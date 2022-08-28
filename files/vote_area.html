@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
+    <title>N.O.V.A</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/material-dashboard.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container" style="width: 700px">
+        <div class="wrapper ">
+            <div class="sidebar" data-color="azure" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
+                <!--
+            Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+    
+            Tip 2: you can also add an image using data-image tag
+        -->
+                <div class="sidebar-wrapper">
+                    <ul class="nav" style="margin-top: 50px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../userInfo.html">
+                                <i class="material-icons">content_paste</i>
+                                <p href="../userInfo.html">Information</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/voter-registration.html">
+                                <i class="material-icons">check_box</i>
+                                <p>Voter Registeration</p>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <i class="material-icons">how_to_vote</i>
+                                <p>Voting-Area</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./result.html">
+                                <i class="material-icons">assessment</i>
+                                <p>Result</p>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                  <a class="nav-link" href="/changePhase">
+                    <i class="material-icons">content_paste</i>
+                    <p>Change Phase</p>
+                  </a>
+                </li> -->
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./index.html">
+                                <i class="material-icons">logout</i>
+                                <p>LogOut</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content">
+                <table class="table">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Party</th>
+                        <th scope="col">Vote</th>
+                    </thead>
+                    <thead>
+                        <th scope="col">1</th>
+                        <th scope="col">Sanchayi</th>
+                        <th scope="col">BJP</th>
+                        <th scope="col"><a href="./voted.html">Click to Vote</a></th>
+                    </thead>
+                    <tbody id="contestantsResults">
+
+                    </tbody>
+                    <hr/>
+                    <p id="accountAddress" class="text-center"></p>
+                </table>
+            </div>
+        </div>
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
+</html>

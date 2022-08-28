@@ -1,0 +1,10 @@
+.voted {
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.done {
+    height: 100px;
+    width: 100px;
+}
